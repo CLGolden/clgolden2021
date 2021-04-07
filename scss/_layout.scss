@@ -1,0 +1,35 @@
+/* ======================================
+	MAIN LAYOUT - MOBILE FIRST
+========================================= */
+.pageWrapper {
+	display:flex;
+	flex-direction:column;
+	height:100%;
+}
+header {
+	flex:0 0 auto;
+}
+main {
+	flex:1 0 auto;
+}
+footer {
+	flex:0 0 auto;
+}
+.container {
+	padding:0 1em;
+	max-width:1200px;
+	margin:0 auto;
+}
+.content {
+	padding:0 1em;
+	max-width:960px;
+	margin:0 auto;
+}
+/* ****************************
+         1200 and Up
+******************************* */
+@media (min-width: 1200px) {
+	.container, .content {
+		padding:0;
+	}
+}

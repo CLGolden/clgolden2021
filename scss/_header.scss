@@ -1,0 +1,43 @@
+/* ======================================
+	HEADER - MOBILE FIRST
+========================================= */
+header {
+	background-color: rgba(187, 200, 186, 0.6);
+	position: fixed;
+	width:100%;
+	min-height:72px;
+	top: 0;
+	z-index: 100;
+	transition: all .3s ease;
+	box-shadow: 0 1px 25px rgba(0,0,0, .1);
+	.container {
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		> div {
+			text-align:center;
+			margin:8px 0;
+		}
+		> div:first-child {
+			font-family: 'Dancing Script', cursive;
+			@include fontsize(40px);
+			a {
+				text-decoration: underline solid $orange;
+			}
+		}
+	}
+}
+header.hide {
+	top: -150px;
+}
+/* ****************************
+         600 and Up
+******************************* */
+@media (min-width: 600px) {
+	header {
+		.container {
+			flex-direction:row;
+			justify-content:space-between;
+		}
+	}
+}

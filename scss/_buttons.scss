@@ -1,0 +1,21 @@
+/* =====================
+	BUTTONS
+======================== */
+.button {
+	background-color:$darkYellow;
+	padding:12px 24px;
+	border-radius: 8px;
+	width:fit-content;
+	margin:12px;
+	box-shadow: 3px 3px 5px $lightGray;
+	a {
+		color:$darkGreen;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+.button:hover {
+	background-color:$yellow;
+}

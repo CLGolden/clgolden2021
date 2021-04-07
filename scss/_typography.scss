@@ -1,0 +1,51 @@
+/* ======================================
+	TYPOGRAPHY
+========================================= */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300,400,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+html, body, p, ul li, ol li {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-size:20px;
+	line-height: 1.3889;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	color:$darkGreen;
+}
+@mixin fontsize ($pixel) {
+	font-size:$pixel;
+	font-size:($pixel / 20px * 1rem);
+}
+
+$light:300;
+$regular:400;
+$semiBold:600;
+$bold:700;
+
+h1, h2, h3, h4 {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	color:$darkGreen;
+	font-weight:$light;
+}
+h1 {
+	@include fontsize(38px);
+	text-align:center;
+	margin:12px;
+}
+h2 {
+	@include fontsize(34px);
+	text-align:center;
+}
+h3 {
+	@include fontsize(26px);
+}
+h4 {
+	@include fontsize(22px);
+	font-weight:$semiBold;
+	margin:0;
+}
+
+.center {text-align:center;}
+.bold {font-weight:$bold;}
+.gold {background-color:gold;}

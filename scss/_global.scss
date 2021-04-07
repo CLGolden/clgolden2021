@@ -1,0 +1,71 @@
+/* ======================================
+	GLOBAL STYLES
+========================================= */
+.group:after {
+	content:"";
+	display: table;
+	clear:both;
+}
+@supports(display:grid) {
+	.message {
+		display: none;
+	}
+}
+.message {
+	background-color:$black;
+	color:$white;
+}
+html, body {
+	height:100%;
+	margin:0;
+}
+*{  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+/* RESPONSIVE IMAGES */
+img{ max-width:100%; height:auto;}
+
+/* LINKS */
+a {
+	color:$darkGreen;
+	text-decoration:underline dotted $orange;
+}
+a:hover {
+	text-decoration:underline solid $orange;
+}
+.displayDesktop {
+	display:none;
+}
+.testimonial {
+	border-left:2px solid $green;
+	padding-left:12px;
+	width:95%;
+	> img {
+		width:100px;
+		float:left;
+		margin-right:12px;
+	}
+	blockquote {
+		margin:0;
+		p {
+			font-style:italic;
+			margin:0 0 8px;
+			@include fontsize(18px);
+		}
+		.cite {
+			font-style:normal;
+			font-weight:600;
+		}
+	}
+}
+/* ****************************
+         600 and Up
+******************************* */
+@media (min-width: 600px) {
+	.displayMobile {
+		display:none;
+	}
+	.displayDesktop {
+		display:block;
+	}
+}

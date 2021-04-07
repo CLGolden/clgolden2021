@@ -1,0 +1,17 @@
+/* ======================================
+	FOOTER - MOBILE FIRST
+========================================= */
+footer {
+	background-color:$darkGreen;
+	margin-top:50px;
+	.container {
+		p {
+			color:$white;
+			@include fontsize(16px);
+			a {
+				color:$white;
+				text-decoration:none;
+			}
+		}
+	}
+}

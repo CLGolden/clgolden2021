@@ -1,0 +1,43 @@
+/* ======================================
+	NAVIGATION - MOBILE FIRST
+========================================= */
+nav {
+	max-width: 320px;
+	background-color: $yellow;
+	border-radius: 8px;
+	margin:8px 0 12px;
+	ul {
+		display: flex;
+		justify-content:space-evenly;
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height: 1;
+		li {
+			border-right:1px solid $darkGreen;
+			a {
+				display: block;
+				padding:12px 18px;
+				text-decoration:none;
+			}
+		}
+		li:last-child {
+			border:none;
+		}
+	}
+}
+/* ****************************
+         600 and Up
+******************************* */
+@media (min-width: 600px) {
+	nav {
+		ul {
+			li {
+				a {
+					padding:8px 18px;
+					@include fontsize(18px);
+				}
+			}
+		}
+	}
+}
